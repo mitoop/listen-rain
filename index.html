@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <title>听雨 - Listen the rain</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="keywords" content="听雨,安静,冥想"/>
+    <link rel="stylesheet" href="resources/styles.css">
+    <link rel="shortcut icon" href="/favicon.ico">
+    <style>
+     .music-item{
+         cursor: pointer;
+     }
+    </style>
+</head>
+<body>
+<div id="center_area" style="font-size:0.8em;"><h3 id="center_area_title" class="text-shadow">听雨</h3><br/>
+    <button id="btnPlay" class="play" onclick="playAudio()"></button>
+    <br/><br/>
+    <div class="volume_control"><label class="text-shadow">雨声<input type="range" onchange="setVolume( 1)" min="0" max="1" step="0.01" value="1" id="volumn_rain"/></label></div>
+    <br/><br/>
+    <div class="volume_control"><label class="text-shadow">音乐<input type="range" onchange="setVolume(2)" min="0" max="1" step="0.01" value="0.3" id="volumn_music"/></label></div>
+</div>
+</div>
+<audio id="player_rain" loop="loop">
+    <source src="" type="audio/mp4" id="player_rain_source"/>
+    浏览器暂不支持此功能.
+</audio>
+<audio id="player_music" loop="loop">
+    <source src="" type="audio/mp3" id="player_music_source"/>
+    浏览器暂不支持此功能.
+</audio>
+</div>
+<div class="footer">
+    <p class="music-item" id="17746129" onclick="change_music(this.id)" title="《In Autumn,the Leaves Came to Our House》"><small class="water_flow">"很多时候，我只是与孤独为伴"</small></p>
+    <p class="music-item" id="1489566" onclick="change_music(this.id)" title="《Theme From Schindler's List》"><small class="text-shadow">"只希望在这夜深人静，或灯火阑珊，或尘世喧嚣中，听雨能够带给你一丝独特的感受。"</small></p>
+    <p class="music-item" id="1142999" onclick="change_music(this.id)" title="《Emmanuel》"><small class="text-shadow">"当屋外雨声萧萧"</small></p>
+    <p class="music-item" id="5276791" onclick="change_music(this.id)" title="《舒伯特-小夜曲》"><small class="text-shadow">"甚至可以听到风在草地掠过"</small></p>
+    <p class="music-item" id="1070865" onclick="change_music(this.id)" title="《Lament》"><small class="text-shadow">"带着琴声悠悠"</small></p>
+    <br/>
+    <hr id="footer-hr" class="text-shadow">
+    <br/>
+    </div>
+<script type="application/javascript" src="resources/js.js"></script>
+</body>
+</html>

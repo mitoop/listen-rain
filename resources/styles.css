@@ -1,0 +1,211 @@
+body {
+    padding: 0;
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #2b2d36;
+    font-size: 16px;
+    color: #fff;
+    background-position: center;
+    height: 100%;
+    max-height: 100%;
+    display: block
+}
+
+#btnPlay {
+    cursor:pointer;
+    width: 180px;
+    height: 180px;
+    border: 0;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    outline: 0;
+    box-shadow: 0px 1px 1px #000;
+}
+
+.play {
+    background: url('play.svg');
+    width: 180px;
+    height: 180px
+}
+
+.pause {
+    background: url('pause.svg');
+    width: 180px;
+    height: 180px
+}
+
+.volume_control {
+    margin: 0 auto;
+    padding-top: 0;
+    padding-bottom: 0;
+    max-width: 30%;
+    min-width: 10%;
+    display: inline-block
+}
+
+#center_area {
+    margin-left: auto;
+    margin-top: 20px;
+    text-align: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 10px
+}
+
+#center_area_title{
+    font-size:28px;
+    font-weight: 200;
+    color: #ececec;
+    letter-spacing: 10px;
+}
+
+input[type=range] {
+    -webkit-appearance: none;
+    width: 100%;
+    margin: 6.05px 0
+}
+
+input[type=range]:focus {
+    outline: 0
+}
+
+input[type=range]::-webkit-slider-runnable-track {
+    width: 100%;
+    height: 2.9px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #310000, 0px 0 0 #4b0000;
+    background: #fff;
+    border-radius: 0;
+    border: 0 solid #000
+}
+
+input[type=range]::-webkit-slider-thumb {
+    box-shadow: 0 0 0 #000, 0px 0 0 #0d0d0d;
+    border: 0 solid #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer;
+    -webkit-appearance: none;
+    margin-top: -6.05px
+}
+
+input[type=range]:focus::-webkit-slider-runnable-track {
+    background: #fff
+}
+
+input[type=range]::-moz-range-track {
+    width: 100%;
+    height: 2.9px;
+    cursor: pointer;
+    box-shadow: 0 0 0 #310000, 0px 0 0 #4b0000;
+    background: #fff;
+    border-radius: 0;
+    border: 0 solid #000
+}
+
+input[type=range]::-moz-range-thumb {
+    box-shadow: 0 0 0 #000, 0px 0 0 #0d0d0d;
+    border: 0 solid #fff;
+    height: 15px;
+    width: 15px;
+    border-radius: 50px;
+    background: #fff;
+    cursor: pointer
+}
+
+input[type=range]::-ms-track {
+    width: 100%;
+    height: 2.9px;
+    cursor: pointer;
+    background: transparent;
+    border-color: transparent;
+    color: transparent
+}
+
+input[type=range]::-ms-fill-lower {
+    background: #f2f2f2;
+    border: 0 solid #000;
+    border-radius: 0;
+    box-shadow: 0 0 0 #310000, 0px 0 0 #4b0000
+}
+
+input[type=range]::-ms-fill-upper {
+    background: #fff;
+    border: 0 solid #000;
+    border-radius: 0;
+    box-shadow: 0 0 0 #310000, 0px 0 0 #4b0000
+}
+
+input[type=range]::-ms-thumb {
+    box-shadow: 0 0 0 #000, 0px 0 0 #0d0d0d;
+    border: 0 solid #fff;
+    width: 15px;
+    border-radius: 0;
+    background: #fff;
+    cursor: pointer;
+    height: 17px
+}
+
+input[type=range]:focus::-ms-fill-lower {
+    background: #fff
+}
+
+input[type=range]:focus::-ms-fill-upper {
+    background: #fff
+}
+
+.footer {
+    padding-top: 150px;
+    padding-bottom: 20px;
+    width: 100%;
+    text-align: center
+}
+
+.footer a {
+    color: #bbb;
+    font-size: .8em
+}
+
+.footer p small {
+    color: #ececec;
+}
+
+#footer-hr {
+    border: 1px dashed #ececec;
+    width: 150px;
+}
+
+#select_music {
+    background: #333;
+    border: 1px #ddd solid;
+    height: 30px;
+    margin-right: 20px;
+    max-width: 50%;
+    color: #ddd
+}
+
+.water_flow{
+    margin: 0;
+    background: -webkit-linear-gradient(left, #fff, #f00 6.25%, #ff7d00 12.5%, #ff0 18.75%, #0f0 25%, #0ff 31.25%, #00f 37.5%, #f0f 43.75%, #ff0 50%, #f00 56.25%, #ff7d00 62.5%, #ff0 68.75%, #0f0 75%, #0ff 81.25%, #00f 87.5%, #f0f 93.75%, #ff0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-size: 200% 100%;
+    animation: masked-animation 2s infinite linear
+}
+
+@keyframes masked-animation {
+    0% {
+        background-position: 0 0
+    }
+    100% {
+        background-position: -100%, 0
+    }
+}
+
+.text-shadow{
+    text-shadow: 1px 3px 1px #000;
+}
